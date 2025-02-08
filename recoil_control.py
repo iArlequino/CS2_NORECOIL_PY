@@ -345,11 +345,6 @@ class RecoilControl:
 
     def control_loop(self):
         while self.running:
-            if keyboard.is_pressed('esc'):
-                self.running = False
-                self.queue.put("quit")
-                break
-
             if keyboard.is_pressed('f1'):
                 self.toggle_bhop()
                 time.sleep(0.3)
